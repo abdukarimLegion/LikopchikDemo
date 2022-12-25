@@ -1,2 +1,14 @@
 server:
   port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/likopchik
+    username: likopchik
+    password: 1234
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL92Dialect
+    hibernate:
+      ddl-auto: update
